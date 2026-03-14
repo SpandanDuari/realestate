@@ -37,7 +37,7 @@
         <div class="hero-copy">
           <p class="eyebrow">Trusted by 2,500+ happy homeowners across India</p>
           <h1>Find the place where your next chapter begins.</h1>
-          <p class="hero-subtext">From modern apartments in Bengaluru to family villas in Pune and premium residences in Gurugram, we help clients buy, sell, and invest with confidence.</p>
+          <p class="hero-subtext">From modern apartments in New Town to family villas in Alipore and premium commercial spaces in Salt Lake, we help clients buy, sell, and invest with confidence.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#listings">Browse Listings</a>
             <a class="btn btn-outline" href="#contact">Book a Consultation</a>
@@ -66,7 +66,7 @@
           <h2>Skyline View Penthouse</h2>
           <p>3 BHK • 3 Baths • 2,300 sq ft</p>
           <div class="hero-card-bottom">
-            <span>Lower Parel, Mumbai</span>
+            <span>Ballygunge, Kolkata</span>
             <button class="btn btn-light">View Tour</button>
           </div>
         </div>
@@ -89,74 +89,74 @@
         </div>
 
         <div class="listing-grid">
-          <article class="listing-card" data-type="house">
+          <article class="listing-card" data-type="house" tabindex="0" role="button" aria-label="Open details for Palm Grove Villa">
             <div class="listing-image img-1"></div>
             <div class="listing-body">
               <h3>Palm Grove Villa</h3>
               <p>4 BHK • 3 Baths • 3,100 sq ft</p>
               <div class="listing-meta">
                 <span>₹3.2 Cr</span>
-                <span>Koregaon Park, Pune</span>
+                <span>New Town, Kolkata</span>
               </div>
             </div>
           </article>
 
-          <article class="listing-card" data-type="apartment">
+          <article class="listing-card" data-type="apartment" tabindex="0" role="button" aria-label="Open details for Riverfront Heights">
             <div class="listing-image img-2"></div>
             <div class="listing-body">
               <h3>Riverfront Heights</h3>
               <p>2 BHK • 2 Baths • 1,450 sq ft</p>
               <div class="listing-meta">
                 <span>₹1.6 Cr</span>
-                <span>Bandra West, Mumbai</span>
+                <span>Salt Lake, Kolkata</span>
               </div>
             </div>
           </article>
 
-          <article class="listing-card" data-type="commercial">
+          <article class="listing-card" data-type="commercial" tabindex="0" role="button" aria-label="Open details for Cyber City Office Hub">
             <div class="listing-image img-3"></div>
             <div class="listing-body">
               <h3>Cyber City Office Hub</h3>
               <p>Open Plan • 6,400 sq ft</p>
               <div class="listing-meta">
                 <span>₹8.5 Cr</span>
-                <span>Gurugram, Haryana</span>
+                <span>Sector V, Bidhannagar</span>
               </div>
             </div>
           </article>
 
-          <article class="listing-card" data-type="house">
+          <article class="listing-card" data-type="house" tabindex="0" role="button" aria-label="Open details for Maple Garden Residency">
             <div class="listing-image img-4"></div>
             <div class="listing-body">
               <h3>Maple Garden Residency</h3>
               <p>5 BHK • 4 Baths • 3,700 sq ft</p>
               <div class="listing-meta">
                 <span>₹4.1 Cr</span>
-                <span>Jubilee Hills, Hyderabad</span>
+                <span>Alipore, Kolkata</span>
               </div>
             </div>
           </article>
 
-          <article class="listing-card" data-type="apartment">
+          <article class="listing-card" data-type="apartment" tabindex="0" role="button" aria-label="Open details for Metro Luxe Residency">
             <div class="listing-image img-5"></div>
             <div class="listing-body">
               <h3>Metro Luxe Residency</h3>
               <p>1 BHK • 1 Bath • 920 sq ft</p>
               <div class="listing-meta">
                 <span>₹92 Lakh</span>
-                <span>Whitefield, Bengaluru</span>
+                <span>Garia, Kolkata</span>
               </div>
             </div>
           </article>
 
-          <article class="listing-card" data-type="commercial">
+          <article class="listing-card" data-type="commercial" tabindex="0" role="button" aria-label="Open details for Parkside Retail Arcade">
             <div class="listing-image img-6"></div>
             <div class="listing-body">
               <h3>Parkside Retail Arcade</h3>
               <p>Street Front • 2,800 sq ft</p>
               <div class="listing-meta">
                 <span>₹3.9 Cr</span>
-                <span>Connaught Place, New Delhi</span>
+                <span>Howrah Maidan, Howrah</span>
               </div>
             </div>
           </article>
@@ -265,6 +265,21 @@
       </div>
     </section>
   </main>
+
+  <div class="listing-modal" id="listingModal" aria-hidden="true">
+    <div class="listing-modal-panel" role="dialog" aria-modal="true" aria-labelledby="listingModalTitle">
+      <button class="listing-modal-close" id="listingModalClose" aria-label="Close property details">×</button>
+      <div class="listing-modal-image" id="listingModalImage" aria-hidden="true"></div>
+      <div class="listing-modal-content">
+        <p class="eyebrow" id="listingModalType">Property</p>
+        <h3 id="listingModalTitle">Listing Title</h3>
+        <p class="listing-modal-specs" id="listingModalSpecs"></p>
+        <p class="listing-modal-location" id="listingModalLocation"></p>
+        <p class="listing-modal-price" id="listingModalPrice"></p>
+        <p class="listing-modal-description" id="listingModalDescription"></p>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-wrap">
