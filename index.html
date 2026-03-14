@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Udaan Realty helps clients discover luxury homes, apartments, and investment properties across India." />
+  <title>Udaan Realty | Premium Real Estate in India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Udaan Realty home">
+        <span class="brand-mark">U</span>
+        <span class="brand-text">Udaan <strong>Realty</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="#listings">Listings</a>
+        <a href="#services">Services</a>
+        <a href="#agents">Agents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Trusted by 2,500+ happy homeowners across India</p>
+          <h1>Find the place where your next chapter begins.</h1>
+          <p class="hero-subtext">From modern apartments in Bengaluru to family villas in Pune and premium residences in Gurugram, we help clients buy, sell, and invest with confidence.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#listings">Browse Listings</a>
+            <a class="btn btn-outline" href="#contact">Book a Consultation</a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <h3>1.2K+</h3>
+              <p>Properties Sold</p>
+            </article>
+            <article>
+              <h3>₹720 Cr+</h3>
+              <p>Client Portfolio Value</p>
+            </article>
+            <article>
+              <h3>4.9/5</h3>
+              <p>Average Client Rating</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-card-top">
+            <span class="chip">Featured</span>
+            <span class="price">₹4.8 Cr</span>
+          </div>
+          <h2>Skyline View Penthouse</h2>
+          <p>3 BHK • 3 Baths • 2,300 sq ft</p>
+          <div class="hero-card-bottom">
+            <span>Lower Parel, Mumbai</span>
+            <button class="btn btn-light">View Tour</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="listings">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Curated Properties</p>
+          <h2>Featured Listings</h2>
+          <p>Handpicked opportunities for every lifestyle and investment goal.</p>
+        </div>
+
+        <div class="listing-filters" role="toolbar" aria-label="Filter listings">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="house">Houses</button>
+          <button class="filter-btn" data-filter="apartment">Apartments</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+
+        <div class="listing-grid">
+          <article class="listing-card" data-type="house">
+            <div class="listing-image img-1"></div>
+            <div class="listing-body">
+              <h3>Palm Grove Villa</h3>
+              <p>4 BHK • 3 Baths • 3,100 sq ft</p>
+              <div class="listing-meta">
+                <span>₹3.2 Cr</span>
+                <span>Koregaon Park, Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card" data-type="apartment">
+            <div class="listing-image img-2"></div>
+            <div class="listing-body">
+              <h3>Riverfront Heights</h3>
+              <p>2 BHK • 2 Baths • 1,450 sq ft</p>
+              <div class="listing-meta">
+                <span>₹1.6 Cr</span>
+                <span>Bandra West, Mumbai</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card" data-type="commercial">
+            <div class="listing-image img-3"></div>
+            <div class="listing-body">
+              <h3>Cyber City Office Hub</h3>
+              <p>Open Plan • 6,400 sq ft</p>
+              <div class="listing-meta">
+                <span>₹8.5 Cr</span>
+                <span>Gurugram, Haryana</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card" data-type="house">
+            <div class="listing-image img-4"></div>
+            <div class="listing-body">
+              <h3>Maple Garden Residency</h3>
+              <p>5 BHK • 4 Baths • 3,700 sq ft</p>
+              <div class="listing-meta">
+                <span>₹4.1 Cr</span>
+                <span>Jubilee Hills, Hyderabad</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card" data-type="apartment">
+            <div class="listing-image img-5"></div>
+            <div class="listing-body">
+              <h3>Metro Luxe Residency</h3>
+              <p>1 BHK • 1 Bath • 920 sq ft</p>
+              <div class="listing-meta">
+                <span>₹92 Lakh</span>
+                <span>Whitefield, Bengaluru</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="listing-card" data-type="commercial">
+            <div class="listing-image img-6"></div>
+            <div class="listing-body">
+              <h3>Parkside Retail Arcade</h3>
+              <p>Street Front • 2,800 sq ft</p>
+              <div class="listing-meta">
+                <span>₹3.9 Cr</span>
+                <span>Connaught Place, New Delhi</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What We Offer</p>
+          <h2>End-to-End Real Estate Services</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Property Buying</h3>
+            <p>Personalized home search, locality insights, and seamless negotiation support for Indian markets.</p>
+          </article>
+          <article class="service-card">
+            <h3>Property Selling</h3>
+            <p>Professional staging, strategic pricing, and targeted marketing to maximize value in your city.</p>
+          </article>
+          <article class="service-card">
+            <h3>Investment Advisory</h3>
+            <p>Data-driven recommendations for rental yield, pre-launch opportunities, and portfolio growth.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agents">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Meet the Team</p>
+          <h2>Top Local Agents</h2>
+        </div>
+        <div class="agents-grid">
+          <article class="agent-card">
+            <h3>Ananya Sharma</h3>
+            <p>Luxury Specialist • 12 Years</p>
+          </article>
+          <article class="agent-card">
+            <h3>Rohan Mehta</h3>
+            <p>Commercial Advisor • 9 Years</p>
+          </article>
+          <article class="agent-card">
+            <h3>Priya Nair</h3>
+            <p>Family Homes Expert • 11 Years</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Client Stories</p>
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>
+            “Udaan Realty helped us close on our dream home in under 3 weeks. Smooth and stress-free.”
+            <cite>— Arjun & Neha S.</cite>
+          </blockquote>
+          <blockquote>
+            “As an investor, I value their market intelligence. Their advice has consistently delivered returns.”
+            <cite>— Vikram R.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <div>
+          <p class="eyebrow">Get Started</p>
+          <h2>Let’s find your perfect property.</h2>
+          <p>Tell us what you’re looking for, and one of our advisors will reach out within 24 hours (Mon-Sat).</p>
+        </div>
+
+        <form class="contact-form" aria-label="Contact form">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            Email Address
+            <input type="email" name="email" placeholder="you@example.in" required />
+          </label>
+          <label>
+            Interested In
+            <select name="interest" required>
+              <option value="">Select an option</option>
+              <option>Buying a property</option>
+              <option>Selling a property</option>
+              <option>Investment advisory</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us your goals..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <p class="form-note" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Udaan Realty. All rights reserved.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
